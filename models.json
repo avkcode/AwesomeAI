@@ -1,674 +1,1674 @@
 [
-    { 
-        "name": "GPT-4", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "GPT-4",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "code", "writing"],
+        "useCase": [
+            "chat",
+            "code",
+            "writing"
+        ],
         "description": "OpenAI's most advanced text model with broad capabilities including complex reasoning, creative content generation, and code writing.",
-        "stats": "128K context", 
-        "link": "https://chat.openai.com/", 
+        "stats": "128K context",
+        "link": "https://chat.openai.com/",
         "provider": "OpenAI"
     },
-    { 
-        "name": "GPT-3.5", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "GPT-3.5",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "code", "writing"],
+        "useCase": [
+            "chat",
+            "code",
+            "writing"
+        ],
         "description": "OpenAI's widely used text model that powers the free version of ChatGPT with good performance across many tasks.",
-        "stats": "16K context", 
-        "link": "https://chat.openai.com/", 
+        "stats": "16K context",
+        "link": "https://chat.openai.com/",
         "provider": "OpenAI"
     },
-    { 
-        "name": "Claude 3", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Claude 3",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "writing", "analysis"],
+        "useCase": [
+            "chat",
+            "writing",
+            "analysis"
+        ],
         "description": "Anthropic's most capable model with strong reasoning and instruction-following abilities.",
-        "stats": "200K context", 
-        "link": "https://claude.ai/", 
+        "stats": "200K context",
+        "link": "https://claude.ai/",
         "provider": "Anthropic"
     },
-    { 
-        "name": "Gemini 1.5", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "Gemini 1.5",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "vision", "code"],
+        "useCase": [
+            "chat",
+            "vision",
+            "code"
+        ],
         "description": "Google's most advanced multimodal model that can process text, images, audio and video.",
-        "stats": "1M tokens", 
-        "link": "https://gemini.google.com/", 
+        "stats": "1M tokens",
+        "link": "https://gemini.google.com/",
         "provider": "Google"
     },
-    { 
-        "name": "Llama 3", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "Llama 3",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "code", "research"],
+        "useCase": [
+            "chat",
+            "code",
+            "research"
+        ],
         "description": "Meta's open-source large language model with strong performance across benchmarks.",
-        "stats": "8K context", 
-        "link": "https://ai.meta.com/llama/", 
+        "stats": "8K context",
+        "link": "https://ai.meta.com/llama/",
         "provider": "Meta"
     },
-    { 
-        "name": "Mistral 7B", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "Mistral 7B",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "code"],
+        "useCase": [
+            "chat",
+            "code"
+        ],
         "description": "Highly efficient 7B parameter model that outperforms many larger models.",
-        "stats": "32K context", 
-        "link": "https://mistral.ai/", 
+        "stats": "32K context",
+        "link": "https://mistral.ai/",
         "provider": "Mistral AI"
     },
-    { 
-        "name": "Stable Diffusion XL", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "Stable Diffusion XL",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["text-to-image", "open-source"],
+        "useCase": [
+            "text-to-image",
+            "open-source"
+        ],
         "description": "Stability AI's flagship image model capable of generating high-quality 1024x1024 images.",
-        "stats": "1024x1024", 
-        "link": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0", 
+        "stats": "1024x1024",
+        "link": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
         "provider": "Stability AI"
     },
-    { 
-        "name": "DALL-E 3", 
-        "category": "image", 
-        "license": "proprietary", 
+    {
+        "name": "DALL-E 3",
+        "category": "image",
+        "license": "proprietary",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["text-to-image", "creative"],
+        "useCase": [
+            "text-to-image",
+            "creative"
+        ],
         "description": "OpenAI's most advanced image generation model with exceptional prompt understanding.",
-        "stats": "1024x1024", 
-        "link": "https://openai.com/dall-e", 
+        "stats": "1024x1024",
+        "link": "https://openai.com/dall-e",
         "provider": "OpenAI"
     },
-    { 
-        "name": "Midjourney", 
-        "category": "image", 
-        "license": "proprietary", 
+    {
+        "name": "Midjourney",
+        "category": "image",
+        "license": "proprietary",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["art", "creative"],
+        "useCase": [
+            "art",
+            "creative"
+        ],
         "description": "Specialized in artistic and creative image generation with a distinctive style.",
-        "stats": "v6 model", 
-        "link": "https://www.midjourney.com/", 
+        "stats": "v6 model",
+        "link": "https://www.midjourney.com/",
         "provider": "Midjourney"
     },
-    { 
-        "name": "Gemini Pro", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "Gemini Pro",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "vision", "code"],
+        "useCase": [
+            "chat",
+            "vision",
+            "code"
+        ],
         "description": "Google's general-purpose multimodal model with strong reasoning capabilities.",
-        "stats": "32K context", 
-        "link": "https://gemini.google.com/", 
+        "stats": "32K context",
+        "link": "https://gemini.google.com/",
         "provider": "Google"
     },
-    { 
-        "name": "Claude 2", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Claude 2",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "writing", "analysis"],
+        "useCase": [
+            "chat",
+            "writing",
+            "analysis"
+        ],
         "description": "Previous version of Anthropic's Claude model with strong safety features.",
-        "stats": "100K context", 
-        "link": "https://claude.ai/", 
+        "stats": "100K context",
+        "link": "https://claude.ai/",
         "provider": "Anthropic"
     },
-    { 
-        "name": "GPT-4 Vision", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "GPT-4 Vision",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["vision", "chat"],
+        "useCase": [
+            "vision",
+            "chat"
+        ],
         "description": "GPT-4 with vision capabilities that can analyze and discuss images.",
-        "stats": "128K context", 
-        "link": "https://chat.openai.com/", 
+        "stats": "128K context",
+        "link": "https://chat.openai.com/",
         "provider": "OpenAI"
     },
-    { 
-        "name": "Stable Diffusion 3", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "Stable Diffusion 3",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["text-to-image", "open-source"],
+        "useCase": [
+            "text-to-image",
+            "open-source"
+        ],
         "description": "Next generation of Stable Diffusion with improved prompt understanding.",
-        "stats": "1024x1024", 
-        "link": "https://stability.ai/", 
+        "stats": "1024x1024",
+        "link": "https://stability.ai/",
         "provider": "Stability AI"
     },
-    { 
-        "name": "Llama 2", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "Llama 2",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "research"],
+        "useCase": [
+            "chat",
+            "research"
+        ],
         "description": "Meta's previous open-source large language model with 70B parameters.",
-        "stats": "4K context", 
-        "link": "https://ai.meta.com/llama/", 
+        "stats": "4K context",
+        "link": "https://ai.meta.com/llama/",
         "provider": "Meta"
     },
-    { 
-        "name": "Mixtral", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "Mixtral",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "code"],
+        "useCase": [
+            "chat",
+            "code"
+        ],
         "description": "Sparse mixture of experts model that outperforms larger dense models.",
-        "stats": "32K context", 
-        "link": "https://mistral.ai/", 
+        "stats": "32K context",
+        "link": "https://mistral.ai/",
         "provider": "Mistral AI"
     },
-    { 
-        "name": "PaLM 2", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "PaLM 2",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "code"],
+        "useCase": [
+            "chat",
+            "code"
+        ],
         "description": "Google's large language model powering Bard with multilingual capabilities.",
-        "stats": "8K context", 
-        "link": "https://ai.google/discover/palm2/", 
+        "stats": "8K context",
+        "link": "https://ai.google/discover/palm2/",
         "provider": "Google"
     },
-    { 
-        "name": "Command R+", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Command R+",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "enterprise"],
+        "useCase": [
+            "chat",
+            "enterprise"
+        ],
         "description": "Cohere's enterprise-focused model with strong retrieval capabilities.",
-        "stats": "128K context", 
-        "link": "https://cohere.com/", 
+        "stats": "128K context",
+        "link": "https://cohere.com/",
         "provider": "Cohere"
     },
-    { 
-        "name": "DeepSeek", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "DeepSeek",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "code"],
+        "useCase": [
+            "chat",
+            "code"
+        ],
         "description": "Strong open-source model with 67B parameters from DeepSeek.",
-        "stats": "128K context", 
-        "link": "https://deepseek.com/", 
+        "stats": "128K context",
+        "link": "https://deepseek.com/",
         "provider": "DeepSeek"
     },
-    { 
-        "name": "Falcon 180B", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "Falcon 180B",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["research", "analysis"],
+        "useCase": [
+            "research",
+            "analysis"
+        ],
         "description": "One of the largest open-source models with 180B parameters.",
-        "stats": "2K context", 
-        "link": "https://falconllm.tii.ae/", 
+        "stats": "2K context",
+        "link": "https://falconllm.tii.ae/",
         "provider": "TII"
     },
-    { 
-        "name": "Claude Instant", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Claude Instant",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "lightweight",
-        "useCase": ["chat", "quick"],
+        "useCase": [
+            "chat",
+            "quick"
+        ],
         "description": "Anthropic's faster, lighter model for quick responses.",
-        "stats": "100K context", 
-        "link": "https://claude.ai/", 
+        "stats": "100K context",
+        "link": "https://claude.ai/",
         "provider": "Anthropic"
     },
-    { 
-        "name": "GPT-4 Turbo", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "GPT-4 Turbo",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "code"],
+        "useCase": [
+            "chat",
+            "code"
+        ],
         "description": "Optimized version of GPT-4 with lower costs and improved performance.",
-        "stats": "128K context", 
-        "link": "https://chat.openai.com/", 
+        "stats": "128K context",
+        "link": "https://chat.openai.com/",
         "provider": "OpenAI"
     },
-    { 
-        "name": "Stable LM", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "Stable LM",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "research"],
+        "useCase": [
+            "chat",
+            "research"
+        ],
         "description": "Stability AI's open-source language model family.",
-        "stats": "4K context", 
-        "link": "https://stability.ai/", 
+        "stats": "4K context",
+        "link": "https://stability.ai/",
         "provider": "Stability AI"
     },
-    { 
-        "name": "Bard", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Bard",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "search"],
+        "useCase": [
+            "chat",
+            "search"
+        ],
         "description": "Google's conversational AI service powered by PaLM 2.",
-        "stats": "8K context", 
-        "link": "https://bard.google.com/", 
+        "stats": "8K context",
+        "link": "https://bard.google.com/",
         "provider": "Google"
     },
-    { 
-        "name": "Jurassic-2", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Jurassic-2",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "enterprise"],
+        "useCase": [
+            "chat",
+            "enterprise"
+        ],
         "description": "AI21 Labs' large language model with strong text generation.",
-        "stats": "8K context", 
-        "link": "https://www.ai21.com/", 
+        "stats": "8K context",
+        "link": "https://www.ai21.com/",
         "provider": "AI21"
     },
-    { 
-        "name": "Bloom", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "Bloom",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["multilingual", "research"],
+        "useCase": [
+            "multilingual",
+            "research"
+        ],
         "description": "Multilingual open-source model with 176B parameters.",
-        "stats": "2K context", 
-        "link": "https://huggingface.co/bigscience/bloom", 
+        "stats": "2K context",
+        "link": "https://huggingface.co/bigscience/bloom",
         "provider": "BigScience"
     },
-    { 
-        "name": "GPT-J", 
-        "category": "text", 
-        "license": "open-source", 
+    {
+        "name": "GPT-J",
+        "category": "text",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["research", "chat"],
+        "useCase": [
+            "research",
+            "chat"
+        ],
         "description": "Open-source 6B parameter model from EleutherAI.",
-        "stats": "2K context", 
-        "link": "https://huggingface.co/EleutherAI/gpt-j-6B", 
+        "stats": "2K context",
+        "link": "https://huggingface.co/EleutherAI/gpt-j-6B",
         "provider": "EleutherAI"
     },
-    { 
-        "name": "Claude 3 Sonnet", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Claude 3 Sonnet",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "analysis"],
+        "useCase": [
+            "chat",
+            "analysis"
+        ],
         "description": "Middle-tier Claude 3 model balancing cost and capability.",
-        "stats": "200K context", 
-        "link": "https://claude.ai/", 
+        "stats": "200K context",
+        "link": "https://claude.ai/",
         "provider": "Anthropic"
     },
-    { 
-        "name": "Claude 3 Opus", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Claude 3 Opus",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["complex tasks", "analysis"],
+        "useCase": [
+            "complex tasks",
+            "analysis"
+        ],
         "description": "Most capable Claude 3 model for highly complex tasks.",
-        "stats": "200K context", 
-        "link": "https://claude.ai/", 
+        "stats": "200K context",
+        "link": "https://claude.ai/",
         "provider": "Anthropic"
     },
-    { 
-        "name": "Claude 3 Haiku", 
-        "category": "text", 
-        "license": "proprietary", 
+    {
+        "name": "Claude 3 Haiku",
+        "category": "text",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "lightweight",
-        "useCase": ["quick", "chat"],
+        "useCase": [
+            "quick",
+            "chat"
+        ],
         "description": "Fastest and most cost-effective Claude 3 model.",
-        "stats": "200K context", 
-        "link": "https://claude.ai/", 
+        "stats": "200K context",
+        "link": "https://claude.ai/",
         "provider": "Anthropic"
     },
-    { 
-        "name": "SDXL Turbo", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "SDXL Turbo",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["real-time", "image"],
+        "useCase": [
+            "real-time",
+            "image"
+        ],
         "description": "Real-time text-to-image generation model from Stability AI.",
-        "stats": "512x512", 
-        "link": "https://stability.ai/", 
+        "stats": "512x512",
+        "link": "https://stability.ai/",
         "provider": "Stability AI"
     },
-    { 
-        "name": "Kandinsky", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "Kandinsky",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["art", "creative"],
+        "useCase": [
+            "art",
+            "creative"
+        ],
         "description": "Open-source text-to-image model with artistic capabilities.",
-        "stats": "512x512", 
-        "link": "https://huggingface.co/kandinsky-community", 
+        "stats": "512x512",
+        "link": "https://huggingface.co/kandinsky-community",
         "provider": "Sber AI"
     },
-    { 
-        "name": "DeepFloyd IF", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "DeepFloyd IF",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["text-to-image", "photorealistic"],
+        "useCase": [
+            "text-to-image",
+            "photorealistic"
+        ],
         "description": "Cascaded pixel diffusion model for high-quality images.",
-        "stats": "1024x1024", 
-        "link": "https://huggingface.co/DeepFloyd", 
+        "stats": "1024x1024",
+        "link": "https://huggingface.co/DeepFloyd",
         "provider": "DeepFloyd"
     },
-    { 
-        "name": "Playground v2", 
-        "category": "image", 
-        "license": "proprietary", 
+    {
+        "name": "Playground v2",
+        "category": "image",
+        "license": "proprietary",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["text-to-image", "creative"],
+        "useCase": [
+            "text-to-image",
+            "creative"
+        ],
         "description": "High-quality image generation model with fine control.",
-        "stats": "1024x1024", 
-        "link": "https://playgroundai.com/", 
+        "stats": "1024x1024",
+        "link": "https://playgroundai.com/",
         "provider": "Playground AI"
     },
-    { 
-        "name": "Imagen 2", 
-        "category": "image", 
-        "license": "proprietary", 
+    {
+        "name": "Imagen 2",
+        "category": "image",
+        "license": "proprietary",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["photorealistic", "creative"],
+        "useCase": [
+            "photorealistic",
+            "creative"
+        ],
         "description": "Google's most advanced text-to-image model.",
-        "stats": "1024x1024", 
-        "link": "https://imagen.research.google/", 
+        "stats": "1024x1024",
+        "link": "https://imagen.research.google/",
         "provider": "Google"
     },
-    { 
-        "name": "Stable Video", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "Stable Video",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "experimental",
-        "useCase": ["video", "research"],
+        "useCase": [
+            "video",
+            "research"
+        ],
         "description": "Diffusion model for video generation from images.",
-        "stats": "576x1024", 
-        "link": "https://stability.ai/", 
+        "stats": "576x1024",
+        "link": "https://stability.ai/",
         "provider": "Stability AI"
     },
-    { 
-        "name": "PixArt-α", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "PixArt-α",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["text-to-image", "efficient"],
+        "useCase": [
+            "text-to-image",
+            "efficient"
+        ],
         "description": "Efficient diffusion model trained on 30M high-res images.",
-        "stats": "1024x1024", 
-        "link": "https://huggingface.co/PixArt-alpha", 
+        "stats": "1024x1024",
+        "link": "https://huggingface.co/PixArt-alpha",
         "provider": "PixArt"
     },
-    { 
-        "name": "SD 1.5", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "SD 1.5",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["text-to-image", "open-source"],
+        "useCase": [
+            "text-to-image",
+            "open-source"
+        ],
         "description": "Original Stable Diffusion model with wide community support.",
-        "stats": "512x512", 
-        "link": "https://huggingface.co/runwayml/stable-diffusion-v1-5", 
+        "stats": "512x512",
+        "link": "https://huggingface.co/runwayml/stable-diffusion-v1-5",
         "provider": "Stability AI"
     },
-    { 
-        "name": "SD 2.1", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "SD 2.1",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["text-to-image", "open-source"],
+        "useCase": [
+            "text-to-image",
+            "open-source"
+        ],
         "description": "Improved version of Stable Diffusion with better quality.",
-        "stats": "768x768", 
-        "link": "https://huggingface.co/stabilityai/stable-diffusion-2-1", 
+        "stats": "768x768",
+        "link": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
         "provider": "Stability AI"
     },
-    { 
-        "name": "Würstchen", 
-        "category": "image", 
-        "license": "open-source", 
+    {
+        "name": "Würstchen",
+        "category": "image",
+        "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["efficient", "text-to-image"],
+        "useCase": [
+            "efficient",
+            "text-to-image"
+        ],
         "description": "Efficient text-to-image model using latent diffusion.",
-        "stats": "1024x1024", 
-        "link": "https://huggingface.co/warp-ai/wuerstchen", 
+        "stats": "1024x1024",
+        "link": "https://huggingface.co/warp-ai/wuerstchen",
         "provider": "Warp AI"
     },
-    { 
-        "name": "Kosmos-2", 
-        "category": "multimodal", 
-        "license": "open-source", 
+    {
+        "name": "Kosmos-2",
+        "category": "multimodal",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "experimental",
-        "useCase": ["vision", "language"],
+        "useCase": [
+            "vision",
+            "language"
+        ],
         "description": "Multimodal model with grounding capabilities.",
-        "stats": "2K context", 
-        "link": "https://huggingface.co/microsoft/kosmos-2", 
+        "stats": "2K context",
+        "link": "https://huggingface.co/microsoft/kosmos-2",
         "provider": "Microsoft"
     },
-    { 
-        "name": "Fuyu-8B", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "Fuyu-8B",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "chat"],
+        "useCase": [
+            "vision",
+            "chat"
+        ],
         "description": "Multimodal model designed for digital agents.",
-        "stats": "8K context", 
-        "link": "https://www.adept.ai/", 
+        "stats": "8K context",
+        "link": "https://www.adept.ai/",
         "provider": "Adept"
     },
-    { 
-        "name": "IDEFICS", 
-        "category": "multimodal", 
-        "license": "open-source", 
+    {
+        "name": "IDEFICS",
+        "category": "multimodal",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "language"],
+        "useCase": [
+            "vision",
+            "language"
+        ],
         "description": "Open-source multimodal model based on Flamingo.",
-        "stats": "2K context", 
-        "link": "https://huggingface.co/HuggingFaceM4/idefics-9b", 
+        "stats": "2K context",
+        "link": "https://huggingface.co/HuggingFaceM4/idefics-9b",
         "provider": "Hugging Face"
     },
-    { 
-        "name": "LLaVA", 
-        "category": "multimodal", 
-        "license": "open-source", 
+    {
+        "name": "LLaVA",
+        "category": "multimodal",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "chat"],
+        "useCase": [
+            "vision",
+            "chat"
+        ],
         "description": "Open-source vision-language assistant.",
-        "stats": "2K context", 
-        "link": "https://llava-vl.github.io/", 
+        "stats": "2K context",
+        "link": "https://llava-vl.github.io/",
         "provider": "UW Madison"
     },
-    { 
-        "name": "Qwen-VL", 
-        "category": "multimodal", 
-        "license": "open-source", 
+    {
+        "name": "Qwen-VL",
+        "category": "multimodal",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "chat"],
+        "useCase": [
+            "vision",
+            "chat"
+        ],
         "description": "Alibaba's open-source vision-language model.",
-        "stats": "8K context", 
-        "link": "https://huggingface.co/Qwen/Qwen-VL", 
+        "stats": "8K context",
+        "link": "https://huggingface.co/Qwen/Qwen-VL",
         "provider": "Alibaba"
     },
-    { 
-        "name": "PALI-3", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "PALI-3",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["vision", "language"],
+        "useCase": [
+            "vision",
+            "language"
+        ],
         "description": "Google's large vision-language model for complex tasks.",
-        "stats": "32K context", 
-        "link": "https://ai.google/", 
+        "stats": "32K context",
+        "link": "https://ai.google/",
         "provider": "Google"
     },
-    { 
-        "name": "Flamingo", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "Flamingo",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "language"],
+        "useCase": [
+            "vision",
+            "language"
+        ],
         "description": "Few-shot learning model for multimodal tasks.",
-        "stats": "2K context", 
-        "link": "https://www.deepmind.com/", 
+        "stats": "2K context",
+        "link": "https://www.deepmind.com/",
         "provider": "DeepMind"
     },
-    { 
-        "name": "BLIP-2", 
-        "category": "multimodal", 
-        "license": "open-source", 
+    {
+        "name": "BLIP-2",
+        "category": "multimodal",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "language"],
+        "useCase": [
+            "vision",
+            "language"
+        ],
         "description": "Bootstrapped vision-language model with frozen encoders.",
-        "stats": "2K context", 
-        "link": "https://huggingface.co/Salesforce/blip2-opt-2.7b", 
+        "stats": "2K context",
+        "link": "https://huggingface.co/Salesforce/blip2-opt-2.7b",
         "provider": "Salesforce"
     },
-    { 
-        "name": "InstructBLIP", 
-        "category": "multimodal", 
-        "license": "open-source", 
+    {
+        "name": "InstructBLIP",
+        "category": "multimodal",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "instructions"],
+        "useCase": [
+            "vision",
+            "instructions"
+        ],
         "description": "Instruction-tuned version of BLIP for better following.",
-        "stats": "2K context", 
-        "link": "https://huggingface.co/Salesforce/instructblip-flan-t5-xl", 
+        "stats": "2K context",
+        "link": "https://huggingface.co/Salesforce/instructblip-flan-t5-xl",
         "provider": "Salesforce"
     },
-    { 
-        "name": "CoDi", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "CoDi",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "experimental",
-        "useCase": ["multimodal", "generation"],
+        "useCase": [
+            "multimodal",
+            "generation"
+        ],
         "description": "Composable diffusion model for any-to-any generation.",
-        "stats": "2K context", 
-        "link": "https://codi-gen.github.io/", 
+        "stats": "2K context",
+        "link": "https://codi-gen.github.io/",
         "provider": "Microsoft"
     },
-    { 
-        "name": "GATO", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "GATO",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "experimental",
-        "useCase": ["general", "robotics"],
+        "useCase": [
+            "general",
+            "robotics"
+        ],
         "description": "General-purpose agent that can operate across modalities.",
-        "stats": "1K context", 
-        "link": "https://www.deepmind.com/", 
+        "stats": "1K context",
+        "link": "https://www.deepmind.com/",
         "provider": "DeepMind"
     },
-    { 
-        "name": "VILA", 
-        "category": "multimodal", 
-        "license": "open-source", 
+    {
+        "name": "VILA",
+        "category": "multimodal",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "language"],
+        "useCase": [
+            "vision",
+            "language"
+        ],
         "description": "Visual language model aligned with LLMs.",
-        "stats": "4K context", 
-        "link": "https://huggingface.co/", 
+        "stats": "4K context",
+        "link": "https://huggingface.co/",
         "provider": "UW Madison"
     },
-    { 
-        "name": "NExT-GPT", 
-        "category": "multimodal", 
-        "license": "open-source", 
+    {
+        "name": "NExT-GPT",
+        "category": "multimodal",
+        "license": "open-source",
         "architecture": "transformer",
         "performance": "experimental",
-        "useCase": ["any-to-any", "generation"],
+        "useCase": [
+            "any-to-any",
+            "generation"
+        ],
         "description": "End-to-end general multimodal model for any inputs/outputs.",
-        "stats": "2K context", 
-        "link": "https://next-gpt.github.io/", 
+        "stats": "2K context",
+        "link": "https://next-gpt.github.io/",
         "provider": "NUS"
     },
-    { 
-        "name": "Emu", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "Emu",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "generation"],
+        "useCase": [
+            "vision",
+            "generation"
+        ],
         "description": "Meta's foundation model for image generation.",
-        "stats": "4K context", 
-        "link": "https://ai.meta.com/", 
+        "stats": "4K context",
+        "link": "https://ai.meta.com/",
         "provider": "Meta"
     },
-    { 
-        "name": "PALM-E", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "PALM-E",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "experimental",
-        "useCase": ["robotics", "vision"],
+        "useCase": [
+            "robotics",
+            "vision"
+        ],
         "description": "Embodied multimodal model for robotics applications.",
-        "stats": "8K context", 
-        "link": "https://ai.google/", 
+        "stats": "8K context",
+        "link": "https://ai.google/",
         "provider": "Google"
     },
-    { 
-        "name": "RT-2", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "RT-2",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "experimental",
-        "useCase": ["robotics", "vision"],
+        "useCase": [
+            "robotics",
+            "vision"
+        ],
         "description": "Vision-language-action model for robot control.",
-        "stats": "8K context", 
-        "link": "https://ai.google/", 
+        "stats": "8K context",
+        "link": "https://ai.google/",
         "provider": "Google"
     },
-    { 
-        "name": "SEER", 
-        "category": "multimodal", 
-        "license": "proprietary", 
+    {
+        "name": "SEER",
+        "category": "multimodal",
+        "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["vision", "self-supervised"],
+        "useCase": [
+            "vision",
+            "self-supervised"
+        ],
         "description": "Self-supervised computer vision model from Meta.",
-        "stats": "N/A", 
-        "link": "https://ai.meta.com/", 
+        "stats": "N/A",
+        "link": "https://ai.meta.com/",
         "provider": "Meta"
+    },
+    {
+        "name": "OpenFlamingo",
+        "category": "multimodal",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "vision",
+            "language"
+        ],
+        "description": "Open-source implementation of DeepMind's Flamingo model for few-shot learning.",
+        "stats": "9B parameters",
+        "link": "https://huggingface.co/openflamingo",
+        "provider": "OpenFlamingo"
+    },
+    {
+        "name": "Phi-2",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "reasoning"
+        ],
+        "description": "Microsoft's 2.7B parameter model with surprising reasoning capabilities for its size.",
+        "stats": "2.7B parameters",
+        "link": "https://huggingface.co/microsoft/phi-2",
+        "provider": "Microsoft"
+    },
+    {
+        "name": "OLMo",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "research",
+            "chat"
+        ],
+        "description": "Open Language Model from AI2 with full training framework and data.",
+        "stats": "7B parameters",
+        "link": "https://allenai.org/olmo",
+        "provider": "AI2"
+    },
+    {
+        "name": "MPT-7B",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "code"
+        ],
+        "description": "MosaicML's pretrained transformer with 7B parameters, optimized for efficiency.",
+        "stats": "7B parameters",
+        "link": "https://huggingface.co/mosaicml/mpt-7b",
+        "provider": "MosaicML"
+    },
+    {
+        "name": "Pythia",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "research",
+            "analysis"
+        ],
+        "description": "Suite of models ranging from 70M to 12B parameters for research.",
+        "stats": "70M-12B parameters",
+        "link": "https://huggingface.co/EleutherAI/pythia-12b",
+        "provider": "EleutherAI"
+    },
+    {
+        "name": "Replit Code v1.5",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "code",
+            "completion"
+        ],
+        "description": "3B parameter code completion model trained on 20+ programming languages.",
+        "stats": "3B parameters",
+        "link": "https://huggingface.co/replit/replit-code-v1-3b",
+        "provider": "Replit"
+    },
+    {
+        "name": "StarCoder",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "code",
+            "completion"
+        ],
+        "description": "15.5B parameter model trained on 80+ programming languages from BigCode.",
+        "stats": "15.5B parameters",
+        "link": "https://huggingface.co/bigcode/starcoder",
+        "provider": "BigCode"
+    },
+    {
+        "name": "CodeLlama",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "code",
+            "python"
+        ],
+        "description": "Llama 2 specialized for code generation and completion.",
+        "stats": "7B-34B parameters",
+        "link": "https://huggingface.co/codellama",
+        "provider": "Meta"
+    },
+    {
+        "name": "WizardCoder",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "code",
+            "instruction"
+        ],
+        "description": "Llama-based model fine-tuned for code instruction following.",
+        "stats": "15B parameters",
+        "link": "https://huggingface.co/WizardLM/WizardCoder-15B-V1.0",
+        "provider": "WizardLM"
+    },
+    {
+        "name": "Vicuna",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "Fine-tuned Llama model with improved chat capabilities.",
+        "stats": "7B-33B parameters",
+        "link": "https://huggingface.co/lmsys/vicuna-13b-v1.5",
+        "provider": "LMSYS"
+    },
+    {
+        "name": "Koala",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "research"
+        ],
+        "description": "Llama-based chat model fine-tuned on dialogue data.",
+        "stats": "13B parameters",
+        "link": "https://huggingface.co/young-geng/koala",
+        "provider": "BAIR"
+    },
+    {
+        "name": "OpenChat",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "Fine-tuned Llama model optimized for chat applications.",
+        "stats": "13B parameters",
+        "link": "https://huggingface.co/openchat/openchat_3.5",
+        "provider": "OpenChat"
+    },
+    {
+        "name": "Nous-Hermes",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "Llama-based model fine-tuned on high-quality datasets.",
+        "stats": "13B parameters",
+        "link": "https://huggingface.co/NousResearch/Nous-Hermes-13b",
+        "provider": "Nous Research"
+    },
+    {
+        "name": "RedPajama",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "research",
+            "chat"
+        ],
+        "description": "Open-source reproduction of LLaMA training dataset and models.",
+        "stats": "3B-7B parameters",
+        "link": "https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Instruct",
+        "provider": "Together"
+    },
+    {
+        "name": "Cerebras-GPT",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "research",
+            "chat"
+        ],
+        "description": "Family of models trained on Cerebras hardware for efficiency.",
+        "stats": "111M-13B parameters",
+        "link": "https://huggingface.co/cerebras",
+        "provider": "Cerebras"
+    },
+    {
+        "name": "Dolly",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "Databricks' instruction-following LLM based on EleutherAI models.",
+        "stats": "3B-12B parameters",
+        "link": "https://huggingface.co/databricks/dolly-v2-12b",
+        "provider": "Databricks"
+    },
+    {
+        "name": "RWKV",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "RNN",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "efficient"
+        ],
+        "description": "RNN-based architecture alternative to transformers with efficient inference.",
+        "stats": "1B-14B parameters",
+        "link": "https://huggingface.co/BlinkDL/rwkv-4-raven",
+        "provider": "RWKV"
+    },
+    {
+        "name": "GPT-NeoX",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "research",
+            "chat"
+        ],
+        "description": "20B parameter model from EleutherAI using GPT-3 architecture.",
+        "stats": "20B parameters",
+        "link": "https://huggingface.co/EleutherAI/gpt-neox-20b",
+        "provider": "EleutherAI"
+    },
+    {
+        "name": "GPT-JT",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "Fine-tuned version of GPT-J for better instruction following.",
+        "stats": "6B parameters",
+        "link": "https://huggingface.co/togethercomputer/GPT-JT-6B-v1",
+        "provider": "Together"
+    },
+    {
+        "name": "StableBeluga",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "Llama 2 fine-tuned model with strong instruction following.",
+        "stats": "7B-65B parameters",
+        "link": "https://huggingface.co/stabilityai/StableBeluga-7B",
+        "provider": "Stability AI"
+    },
+    {
+        "name": "XGen",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "long-context"
+        ],
+        "description": "Salesforce's 7B model with 8K sequence length.",
+        "stats": "7B parameters",
+        "link": "https://huggingface.co/Salesforce/xgen-7b-8k-base",
+        "provider": "Salesforce"
+    },
+    {
+        "name": "OpenAssistant",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "assistant"
+        ],
+        "description": "Community-driven open-source chat assistant.",
+        "stats": "12B parameters",
+        "link": "https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5",
+        "provider": "OpenAssistant"
+    },
+    {
+        "name": "Baize",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "medical"
+        ],
+        "description": "LoRA-finetuned model with medical specialization.",
+        "stats": "7B-30B parameters",
+        "link": "https://huggingface.co/project-baize/baize-lora-30B",
+        "provider": "Project Baize"
+    },
+    {
+        "name": "ChatGLM",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "multilingual"
+        ],
+        "description": "Chinese-English bilingual chat model from Tsinghua.",
+        "stats": "6B parameters",
+        "link": "https://huggingface.co/THUDM/chatglm-6b",
+        "provider": "Tsinghua"
+    },
+    {
+        "name": "ChatGLM2",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "multilingual"
+        ],
+        "description": "Improved version of ChatGLM with better performance.",
+        "stats": "6B parameters",
+        "link": "https://huggingface.co/THUDM/chatglm2-6b",
+        "provider": "Tsinghua"
+    },
+    {
+        "name": "Linly",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "Chinese"
+        ],
+        "description": "Chinese LLM series including ChatFlow and other variants.",
+        "stats": "7B-13B parameters",
+        "link": "https://huggingface.co/CVI-SZU/Linly",
+        "provider": "Shenzhen University"
+    },
+    {
+        "name": "Phoenix",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "multilingual"
+        ],
+        "description": "Chinese-English bilingual chat model competitive with ChatGPT.",
+        "stats": "13B parameters",
+        "link": "https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b",
+        "provider": "Freedom Intelligence"
+    },
+    {
+        "name": "MOSS",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "Chinese"
+        ],
+        "description": "Chinese conversational AI from Fudan University.",
+        "stats": "16B parameters",
+        "link": "https://huggingface.co/fnlp/moss-moon-003-sft",
+        "provider": "Fudan NLP"
+    },
+    {
+        "name": "Aquila",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "Chinese"
+        ],
+        "description": "Chinese language model from Beijing Academy of AI.",
+        "stats": "7B-33B parameters",
+        "link": "https://huggingface.co/BAAI/AquilaChat-7B",
+        "provider": "BAAI"
+    },
+    {
+        "name": "BELLE",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "Chinese"
+        ],
+        "description": "Chinese instruction-tuning project based on LLaMA.",
+        "stats": "7B-13B parameters",
+        "link": "https://huggingface.co/BelleGroup/BELLE-LLaMA-7B-2M",
+        "provider": "BELLE"
+    },
+    {
+        "name": "Chinese-LLaMA",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "Chinese"
+        ],
+        "description": "LLaMA adapted for Chinese with expanded vocabulary.",
+        "stats": "7B-13B parameters",
+        "link": "https://huggingface.co/ziqingyang/chinese-llama-lora-7b",
+        "provider": "Chinese LLaMA"
+    },
+    {
+        "name": "Alpaca-LoRA",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "Efficient fine-tuning of LLaMA using Low-Rank Adaptation.",
+        "stats": "7B-13B parameters",
+        "link": "https://huggingface.co/tloen/alpaca-lora-7b",
+        "provider": "Alpaca-LoRA"
+    },
+    {
+        "name": "FastChat-T5",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "Chat model based on T5 architecture from LMSYS.",
+        "stats": "3B parameters",
+        "link": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+        "provider": "LMSYS"
+    },
+    {
+        "name": "LongChat",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "long-context"
+        ],
+        "description": "Fine-tuned for longer context conversations.",
+        "stats": "7B-13B parameters",
+        "link": "https://huggingface.co/lmsys/longchat-7b-16k",
+        "provider": "LMSYS"
+    },
+    {
+        "name": "MPT-30B",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
+        "description": "MosaicML's 30B parameter model with 8K context length.",
+        "stats": "30B parameters",
+        "link": "https://huggingface.co/mosaicml/mpt-30b",
+        "provider": "MosaicML"
+    },
+    {
+        "name": "Falcon-7B",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "chat",
+            "research"
+        ],
+        "description": "Efficient 7B parameter model from TII.",
+        "stats": "7B parameters",
+        "link": "https://huggingface.co/tiiuae/falcon-7b",
+        "provider": "TII"
+    },
+    {
+        "name": "Falcon-40B",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "chat",
+            "research"
+        ],
+        "description": "40B parameter model with strong performance.",
+        "stats": "40B parameters",
+        "link": "https://huggingface.co/tiiuae/falcon-40b",
+        "provider": "TII"
+    },
+    {
+        "name": "T5",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "text",
+            "translation"
+        ],
+        "description": "Text-to-text transfer transformer from Google.",
+        "stats": "Small-11B parameters",
+        "link": "https://huggingface.co/t5-small",
+        "provider": "Google"
+    },
+    {
+        "name": "Flan-T5",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "instruction",
+            "few-shot"
+        ],
+        "description": "Instruction-tuned version of T5 with better few-shot performance.",
+        "stats": "Small-11B parameters",
+        "link": "https://huggingface.co/google/flan-t5-large",
+        "provider": "Google"
+    },
+    {
+        "name": "UL2",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "unification",
+            "pretraining"
+        ],
+        "description": "Unified framework for pretraining models.",
+        "stats": "20B parameters",
+        "link": "https://huggingface.co/google/ul2",
+        "provider": "Google"
+    },
+    {
+        "name": "PaLM",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "chat",
+            "reasoning"
+        ],
+        "description": "Google's Pathways Language Model (540B version not publicly available).",
+        "stats": "8B-540B parameters",
+        "link": "https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html",
+        "provider": "Google"
+    },
+    {
+        "name": "LaMDA",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "dialogue",
+            "chat"
+        ],
+        "description": "Google's conversational model powering Bard's early versions.",
+        "stats": "137B parameters",
+        "link": "https://ai.googleblog.com/2022/01/lamda-towards-safe-grounded-and-high.html",
+        "provider": "Google"
+    },
+    {
+        "name": "Gopher",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "research",
+            "analysis"
+        ],
+        "description": "DeepMind's 280B parameter language model.",
+        "stats": "280B parameters",
+        "link": "https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval",
+        "provider": "DeepMind"
+    },
+    {
+        "name": "Chinchilla",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "efficiency",
+            "scaling"
+        ],
+        "description": "DeepMind's compute-optimal 70B parameter model.",
+        "stats": "70B parameters",
+        "link": "https://www.deepmind.com/blog/training-compute-optimal-large-language-models",
+        "provider": "DeepMind"
+    },
+    {
+        "name": "Sparrow",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "dialogue",
+            "safety"
+        ],
+        "description": "DeepMind's dialogue agent with reinforcement learning for safety.",
+        "stats": "70B parameters",
+        "link": "https://www.deepmind.com/blog/improving-alignment-of-dialogue-agents-via-human-feedback",
+        "provider": "DeepMind"
+    },
+    {
+        "name": "Megatron-Turing NLG",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "research",
+            "benchmarking"
+        ],
+        "description": "Microsoft/NVIDIA's 530B parameter model.",
+        "stats": "530B parameters",
+        "link": "https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/",
+        "provider": "Microsoft/NVIDIA"
+    },
+    {
+        "name": "OPT",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "research",
+            "chat"
+        ],
+        "description": "Open Pretrained Transformers from Meta with various sizes.",
+        "stats": "125M-175B parameters",
+        "link": "https://huggingface.co/facebook/opt-66b",
+        "provider": "Meta"
+    },
+    {
+        "name": "Galactica",
+        "category": "text",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "science",
+            "research"
+        ],
+        "description": "Specialized for scientific tasks and papers.",
+        "stats": "6B-120B parameters",
+        "link": "https://huggingface.co/facebook/galactica-120b",
+        "provider": "Meta"
+    },
+    {
+        "name": "Codex",
+        "category": "code",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": [
+            "code",
+            "completion"
+        ],
+        "description": "Model powering GitHub Copilot based on GPT-3.",
+        "stats": "12B parameters",
+        "link": "https://openai.com/blog/openai-codex",
+        "provider": "OpenAI"
+    },
+    {
+        "name": "InstructCodeT5+",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "code",
+            "instruction"
+        ],
+        "description": "Instruction-tuned CodeT5 for code generation.",
+        "stats": "16B parameters",
+        "link": "https://huggingface.co/Salesforce/instructcodet5p-16b",
+        "provider": "Salesforce"
+    },
+    {
+        "name": "PolyCoder",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "code",
+            "multi-language"
+        ],
+        "description": "Open-source code model trained on 12 programming languages.",
+        "stats": "2.7B parameters",
+        "link": "https://huggingface.co/NinedayWang/PolyCoder-2.7B",
+        "provider": "CMU"
+    },
+    {
+        "name": "SantaCoder",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "code",
+            "completion"
+        ],
+        "description": "1.1B parameter model trained on Python, Java, and JavaScript.",
+        "stats": "1.1B parameters",
+        "link": "https://huggingface.co/bigcode/santacoder",
+        "provider": "BigCode"
+    },
+    {
+        "name": "CodeGeeX",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "code",
+            "multilingual"
+        ],
+        "description": "Multilingual code generation model supporting 20+ languages.",
+        "stats": "13B parameters",
+        "link": "https://huggingface.co/THUDM/codegeex2-6b",
+        "provider": "Tsinghua"
+    },
+    {
+        "name": "Incoder",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "code",
+            "infilling"
+        ],
+        "description": "Code model capable of infilling (predicting middle sections of code).",
+        "stats": "1B-6B parameters",
+        "link": "https://huggingface.co/facebook/incoder-6B",
+        "provider": "Meta"
+    },
+    {
+        "name": "CodeT5",
+        "category": "code",
+        "license": "open-source",
+        "architecture": "transformer",
+        "performance": "balanced",
+        "useCase": [
+            "code",
+            "understanding"
+        ],
+        "description": "Versatile code-aware model based on T5 architecture.",
+        "stats": "220M-770M parameters",
+        "link": "https://huggingface.co/Salesforce/codet5-base",
+        "provider": "Salesforce"
     }
 ]
