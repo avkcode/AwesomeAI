@@ -276,16 +276,28 @@
         "provider": "UW Madison"
     },
     {
-    "name": "Leonardo.Ai",
-    "category": "image",
-    "license": "proprietary",
-    "architecture": "diffusion",
-    "performance": "high",
-    "useCase": ["art", "game-assets", "real-time"],
-    "description": "Specialized in real-time generation for game developers and artists. Offers fine-tuned community models and texture generation tools.",
-    "stats": "1024x1024 resolution",
-    "link": "https://app.leonardo.ai/image-generation",
-    "provider": "Leonardo.Ai"
+        "name": "Leonardo.Ai",
+        "category": "image",
+        "license": "proprietary",
+        "architecture": "diffusion",
+        "performance": "high",
+        "useCase": ["art", "game-assets", "real-time"],
+        "description": "Specialized in real-time generation for game developers and artists. Offers fine-tuned community models and texture generation tools.",
+        "stats": "1024x1024 resolution",
+        "link": "https://app.leonardo.ai/image-generation",
+        "provider": "Leonardo.Ai"
+    },
+    {
+        "name": "Ideogram",
+        "category": "image",
+        "license": "proprietary",
+        "architecture": "diffusion",
+        "performance": "high",
+        "useCase": ["typography", "logos", "legible-text"],
+        "description": "Specializes in generating images with accurate, stylized text. Popular for branding and poster design with a simple chat UI.",
+        "stats": "1024x1024 resolution",
+        "link": "https://ideogram.ai/t/explore",
+        "provider": "Ideogram AI"
     },
     {
         "name": "Nous-Capybara",
