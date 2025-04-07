@@ -1,5 +1,17 @@
 [
     {
+        "name": "Copilot",
+        "category": "text",
+        "license": "proprietary",
+        "architecture": "transformer",
+        "performance": "high",
+        "useCase": ["chat", "code", "writing"],
+        "description": "Copilot utilizes the Microsoft Prometheus model, built upon OpenAI's GPT-4 foundational large language model, which in turn has been fine-tuned using both supervised and reinforcement learning techniques.",
+        "stats": "64K context",
+        "link": "https://copilot.microsoft.com",
+        "provider": "Microsoft"
+    },
+    {
         "name": "GPT-4",
         "category": "text",
         "license": "proprietary",
