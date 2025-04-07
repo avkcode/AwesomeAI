@@ -60,18 +60,6 @@
         "provider": "Meta"
     },
     {
-        "name": "Mistral 7B",
-        "category": "text",
-        "license": "open-source",
-        "architecture": "transformer",
-        "performance": "balanced",
-        "useCase": ["chat", "code"],
-        "description": "Highly efficient 7B parameter model that outperforms many larger models. Notable for its lightweight design and ability to run on edge devices with minimal resource demands.",
-        "stats": "32K context",
-        "link": "https://mistral.ai/",
-        "provider": "Mistral AI"
-    },
-    {
         "name": "Stable Diffusion XL",
         "category": "image",
         "license": "open-source",
@@ -82,18 +70,6 @@
         "stats": "1024x1024",
         "link": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
         "provider": "Stability AI"
-    },
-    {
-        "name": "DALL-E 3",
-        "category": "image",
-        "license": "proprietary",
-        "architecture": "diffusion",
-        "performance": "high",
-        "useCase": ["text-to-image", "creative"],
-        "description": "OpenAI's most advanced image generation model with exceptional prompt understanding. Features seamless integration with ChatGPT for iterative design refinement.",
-        "stats": "1024x1024",
-        "link": "https://openai.com/dall-e",
-        "provider": "OpenAI"
     },
     {
         "name": "Midjourney",
@@ -132,18 +108,6 @@
         "provider": "Mistral AI"
     },
     {
-        "name": "Falcon 180B",
-        "category": "text",
-        "license": "open-source",
-        "architecture": "transformer",
-        "performance": "high",
-        "useCase": ["research", "analysis"],
-        "description": "One of the largest open-source models with 180B parameters. Designed for massive-scale research tasks with a focus on multilingual capabilities.",
-        "stats": "2K context",
-        "link": "https://falconllm.tii.ae/",
-        "provider": "TII"
-    },
-    {
         "name": "Stable Diffusion 3",
         "category": "image",
         "license": "open-source",
@@ -164,7 +128,7 @@
         "useCase": ["chat", "analysis", "research"],
         "description": "xAI's latest conversational AI designed to provide maximally helpful and truthful answers. Unique for its focus on accelerating human scientific discovery and real-time data integration.",
         "stats": "256K context",
-        "link": "https://xai.ai/",
+        "link": "https://grok.com/chat/",
         "provider": "xAI"
     },
     {
@@ -276,30 +240,6 @@
         "provider": "Alibaba"
     },
     {
-        "name": "Grok Vision",
-        "category": "multimodal",
-        "license": "proprietary",
-        "architecture": "transformer",
-        "performance": "high",
-        "useCase": ["vision", "chat"],
-        "description": "Grok’s vision-enabled variant, capable of analyzing images and providing contextual responses. Optimized for scientific image interpretation.",
-        "stats": "256K context",
-        "link": "https://xai.ai/",
-        "provider": "xAI"
-    },
-    {
-        "name": "DALL-E 4",
-        "category": "image",
-        "license": "proprietary",
-        "architecture": "diffusion",
-        "performance": "high",
-        "useCase": ["text-to-image", "creative"],
-        "description": "Next evolution of DALL-E with finer detail control and multi-frame generation. Supports dynamic scene transitions for short animations.",
-        "stats": "2048x2048",
-        "link": "https://openai.com/dall-e",
-        "provider": "OpenAI"
-    },
-    {
         "name": "Mistral Medium",
         "category": "text",
         "license": "proprietary",
@@ -308,7 +248,7 @@
         "useCase": ["chat", "enterprise"],
         "description": "Mid-tier Mistral model bridging efficiency and power. Features robust privacy controls for enterprise deployment.",
         "stats": "64K context",
-        "link": "https://mistral.ai/",
+        "link": "https://chat.mistral.ai",
         "provider": "Mistral AI"
     },
     {
@@ -334,30 +274,6 @@
         "stats": "13B parameters",
         "link": "https://llava-vl.github.io/",
         "provider": "UW Madison"
-    },
-    {
-        "name": "Stable Video Diffusion 2",
-        "category": "image",
-        "license": "open-source",
-        "architecture": "diffusion",
-        "performance": "high",
-        "useCase": ["video", "creative"],
-        "description": "Advanced video generation model producing smooth, high-quality clips from text prompts. Supports frame interpolation for fluid motion.",
-        "stats": "1024x576",
-        "link": "https://stability.ai/",
-        "provider": "Stability AI"
-    },
-    {
-        "name": "xAI Codex",
-        "category": "code",
-        "license": "proprietary",
-        "architecture": "transformer",
-        "performance": "high",
-        "useCase": ["code", "scientific"],
-        "description": "xAI’s specialized code model for scientific programming. Integrates with simulation tools and excels in generating optimized algorithms.",
-        "stats": "128K context",
-        "link": "https://xai.ai/",
-        "provider": "xAI"
     },
     {
         "name": "Nous-Capybara",
