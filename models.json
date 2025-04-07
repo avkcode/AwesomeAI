@@ -276,6 +276,18 @@
         "provider": "UW Madison"
     },
     {
+    "name": "Leonardo.Ai",
+    "category": "image",
+    "license": "proprietary",
+    "architecture": "diffusion",
+    "performance": "high",
+    "useCase": ["art", "game-assets", "real-time"],
+    "description": "Specialized in real-time generation for game developers and artists. Offers fine-tuned community models and texture generation tools.",
+    "stats": "1024x1024 resolution",
+    "link": "https://app.leonardo.ai/image-generation",
+    "provider": "Leonardo.Ai"
+    },
+    {
         "name": "Nous-Capybara",
         "category": "text",
         "license": "open-source",
