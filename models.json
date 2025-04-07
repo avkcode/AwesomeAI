@@ -384,36 +384,6 @@
         "provider": "Playground AI"
     },
     {
-        "name": "Nous-Capybara",
-        "category": "text",
-        "license": "open-source",
-        "architecture": "transformer",
-        "performance": "balanced",
-        "useCase": [
-            "chat",
-            "instruction"
-        ],
-        "description": "Nous Research’s latest chat model with a focus on conversational depth and humor. Fine-tuned on diverse, high-quality datasets.",
-        "stats": "34B parameters",
-        "link": "https://huggingface.co/NousResearch/Nous-Capybara-34B",
-        "provider": "Nous Research"
-    },
-    {
-        "name": "Sora",
-        "category": "video",
-        "license": "proprietary",
-        "architecture": "diffusion",
-        "performance": "high",
-        "useCase": [
-            "text-to-video",
-            "simulation"
-        ],
-        "description": "OpenAI's high-fidelity video generation model (not yet public).",
-        "stats": "60s clips",
-        "link": "https://openai.com/sora",
-        "provider": "OpenAI"
-    },
-    {
         "name": "Kaiber",
         "category": "video",
         "license": "proprietary",
@@ -440,7 +410,7 @@
         ],
         "description": "Animates still images with realistic speech and expressions.",
         "stats": "Real-time API",
-        "link": "https://studio.d-id.com",
+        "link": "https://studio.d-id.com/",
         "provider": "D-ID"
     },
     {
