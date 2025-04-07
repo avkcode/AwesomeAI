@@ -180,18 +180,6 @@
         "provider": "Google"
     },
     {
-        "name": "Aurora",
-        "category": "multimodal",
-        "license": "proprietary",
-        "architecture": "transformer",
-        "performance": "high",
-        "useCase": ["vision", "text", "code"],
-        "description": "xAI’s multimodal model integrating text, vision, and code generation. Tailored for scientific visualization and real-time problem-solving.",
-        "stats": "256K context",
-        "link": "https://xai.ai/",
-        "provider": "xAI"
-    },
-    {
         "name": "Stable Diffusion 3.5",
         "category": "image",
         "license": "open-source",
