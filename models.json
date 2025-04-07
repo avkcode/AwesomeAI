@@ -311,4 +311,52 @@
         "link": "https://huggingface.co/NousResearch/Nous-Capybara-34B",
         "provider": "Nous Research"
     }
+    {
+        "name": "Sora",
+        "category": "video",
+        "license": "proprietary",
+        "architecture": "diffusion",
+        "performance": "high",
+        "useCase": ["text-to-video", "simulation"],
+        "description": "OpenAI's high-fidelity video generation model (not yet public).",
+        "stats": "60s clips",
+        "link": "https://openai.com/sora",
+        "provider": "OpenAI"
+    },
+    {
+        "name": "Kaiber",
+        "category": "video",
+        "license": "proprietary",
+        "architecture": "diffusion",
+        "performance": "balanced",
+        "useCase": ["music videos", "animations"],
+        "description": "Generates videos synced to music or text prompts.",
+        "stats": "1080p output",
+        "link": "https://kaiber.ai/superstudio/",
+        "provider": "Kaiber"
+    },
+    {
+        "name": "D-ID",
+        "category": "video",
+        "license": "proprietary",
+        "architecture": "GAN",
+        "performance": "high",
+        "useCase": ["talking photos", "presentations"],
+        "description": "Animates still images with realistic speech and expressions.",
+        "stats": "Real-time API",
+        "link": "https://studio.d-id.com",
+        "provider": "D-ID"
+    },
+    {
+        "name": "Synthesia",
+        "category": "video",
+        "license": "proprietary",
+        "architecture": "GAN",
+        "performance": "high",
+        "useCase": ["AI presenters", "corporate training"],
+        "description": "Generates videos with customizable AI avatars and voiceovers.",
+        "stats": "140+ languages",
+        "link": "https://app.synthesia.io/",
+        "provider": "Synthesia"
+    }
 ]
