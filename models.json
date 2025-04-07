@@ -5,7 +5,11 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "code", "writing"],
+        "useCase": [
+            "chat",
+            "code",
+            "writing"
+        ],
         "description": "Copilot utilizes the Microsoft Prometheus model, built upon OpenAI's GPT-4 foundational large language model, which in turn has been fine-tuned using both supervised and reinforcement learning techniques.",
         "stats": "64K context",
         "link": "https://copilot.microsoft.com",
@@ -17,7 +21,11 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "code", "writing"],
+        "useCase": [
+            "chat",
+            "code",
+            "writing"
+        ],
         "description": "OpenAI's most advanced text model with broad capabilities including complex reasoning, creative content generation, and code writing. Known for its ability to handle nuanced prompts and maintain coherence over long conversations.",
         "stats": "128K context",
         "link": "https://chat.openai.com/",
@@ -29,7 +37,10 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["complex tasks", "analysis"],
+        "useCase": [
+            "complex tasks",
+            "analysis"
+        ],
         "description": "Most capable Claude 3 model for highly complex tasks, excelling in ethical reasoning, safety-first design, and interpreting ambiguous instructions with human-like nuance.",
         "stats": "200K context",
         "link": "https://claude.ai/",
@@ -41,7 +52,11 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "vision", "code"],
+        "useCase": [
+            "chat",
+            "vision",
+            "code"
+        ],
         "description": "Google's most advanced multimodal model that can process text, images, audio, and video. Features exceptional cross-modal reasoning and integration with Google’s ecosystem for real-time data access.",
         "stats": "1M tokens",
         "link": "https://gemini.google.com/",
@@ -53,7 +68,11 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "code", "research"],
+        "useCase": [
+            "chat",
+            "code",
+            "research"
+        ],
         "description": "Meta's open-source large language model with strong performance across benchmarks. Optimized for research flexibility and fine-tuning, with a focus on efficient inference on consumer hardware.",
         "stats": "8K context",
         "link": "https://ai.meta.com/llama/",
@@ -65,7 +84,10 @@
         "license": "open-source",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["text-to-image", "open-source"],
+        "useCase": [
+            "text-to-image",
+            "open-source"
+        ],
         "description": "Stability AI's flagship image model capable of generating high-quality 1024x1024 images. Renowned for its community-driven fine-tuning and extensive pre-trained variants.",
         "stats": "1024x1024",
         "link": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
@@ -77,7 +99,10 @@
         "license": "proprietary",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["art", "creative"],
+        "useCase": [
+            "art",
+            "creative"
+        ],
         "description": "Specialized in artistic and creative image generation with a distinctive style. Known for its community-driven development and focus on photorealistic and surreal outputs.",
         "stats": "v6 model",
         "link": "https://www.midjourney.com/",
@@ -89,7 +114,10 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "code"],
+        "useCase": [
+            "chat",
+            "code"
+        ],
         "description": "Optimized version of GPT-4 with lower costs and improved performance. Excels in rapid response times and handling high-volume API requests.",
         "stats": "128K context",
         "link": "https://chat.openai.com/",
@@ -101,7 +129,10 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "code"],
+        "useCase": [
+            "chat",
+            "code"
+        ],
         "description": "Sparse mixture of experts model that outperforms larger dense models. Unique for its dynamic routing of tasks to specialized sub-networks, enhancing efficiency.",
         "stats": "32K context",
         "link": "https://mistral.ai/",
@@ -113,7 +144,10 @@
         "license": "open-source",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["text-to-image", "open-source"],
+        "useCase": [
+            "text-to-image",
+            "open-source"
+        ],
         "description": "Next generation of Stable Diffusion with improved prompt understanding. Features enhanced coherence in complex scenes and faster generation speeds.",
         "stats": "1024x1024",
         "link": "https://stability.ai/",
@@ -125,7 +159,11 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "analysis", "research"],
+        "useCase": [
+            "chat",
+            "analysis",
+            "research"
+        ],
         "description": "xAI's latest conversational AI designed to provide maximally helpful and truthful answers. Unique for its focus on accelerating human scientific discovery and real-time data integration.",
         "stats": "256K context",
         "link": "https://grok.com/chat/",
@@ -137,7 +175,11 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "enterprise", "code"],
+        "useCase": [
+            "chat",
+            "enterprise",
+            "code"
+        ],
         "description": "Mistral AI's flagship large-scale model, competing with top-tier proprietary models. Known for its multilingual proficiency and enterprise-grade security features.",
         "stats": "128K context",
         "link": "https://mistral.ai/",
@@ -149,7 +191,11 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "code", "research"],
+        "useCase": [
+            "chat",
+            "code",
+            "research"
+        ],
         "description": "Updated iteration of Llama 3 with improved efficiency and context handling. Features enhanced fine-tuning support for domain-specific applications.",
         "stats": "128K context",
         "link": "https://ai.meta.com/llama/",
@@ -161,7 +207,10 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "analysis"],
+        "useCase": [
+            "chat",
+            "analysis"
+        ],
         "description": "Mid-tier update to Claude 3, balancing cost and capability. Improved in reasoning under uncertainty and handling edge-case prompts.",
         "stats": "200K context",
         "link": "https://claude.ai/",
@@ -173,7 +222,10 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "research"],
+        "useCase": [
+            "chat",
+            "research"
+        ],
         "description": "Google’s lightweight open-source model family, designed for efficiency and accessibility. Optimized for on-device deployment and low-resource environments.",
         "stats": "2B-7B parameters",
         "link": "https://ai.google.dev/gemma",
@@ -185,7 +237,10 @@
         "license": "open-source",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["text-to-image", "creative"],
+        "useCase": [
+            "text-to-image",
+            "creative"
+        ],
         "description": "Latest Stable Diffusion iteration with superior detail and prompt fidelity. Includes built-in upscaling and real-time preview capabilities.",
         "stats": "1024x1024",
         "link": "https://stability.ai/",
@@ -197,7 +252,10 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "reasoning"],
+        "useCase": [
+            "chat",
+            "reasoning"
+        ],
         "description": "Microsoft’s next-gen small-scale model with exceptional reasoning for its size. Designed for edge computing and low-latency applications.",
         "stats": "3.8B parameters",
         "link": "https://huggingface.co/microsoft/phi-3",
@@ -209,7 +267,10 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["code", "python"],
+        "useCase": [
+            "code",
+            "python"
+        ],
         "description": "Updated CodeLlama with improved multi-language support and debugging capabilities. Excels in generating production-ready code snippets.",
         "stats": "7B-70B parameters",
         "link": "https://huggingface.co/codellama",
@@ -221,7 +282,10 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "multilingual"],
+        "useCase": [
+            "chat",
+            "multilingual"
+        ],
         "description": "Alibaba’s advanced multilingual model with strong performance in Chinese and English. Features optimized tokenization for cross-lingual tasks.",
         "stats": "72B parameters",
         "link": "https://chat.qwen.ai",
@@ -233,7 +297,10 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "enterprise"],
+        "useCase": [
+            "chat",
+            "enterprise"
+        ],
         "description": "Mid-tier Mistral model bridging efficiency and power. Features robust privacy controls for enterprise deployment.",
         "stats": "64K context",
         "link": "https://chat.mistral.ai",
@@ -245,7 +312,11 @@
         "license": "proprietary",
         "architecture": "transformer",
         "performance": "high",
-        "useCase": ["chat", "vision", "code"],
+        "useCase": [
+            "chat",
+            "vision",
+            "code"
+        ],
         "description": "Top-tier Gemini model with unparalleled multimodal integration. Excels in real-time processing of live video and audio streams.",
         "stats": "2M tokens",
         "link": "https://gemini.google.com/",
@@ -257,7 +328,10 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["vision", "chat"],
+        "useCase": [
+            "vision",
+            "chat"
+        ],
         "description": "Enhanced vision-language assistant with improved grounding and object recognition. Ideal for open-source multimodal research.",
         "stats": "13B parameters",
         "link": "https://llava-vl.github.io/",
@@ -269,7 +343,11 @@
         "license": "proprietary",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["art", "game-assets", "real-time"],
+        "useCase": [
+            "art",
+            "game-assets",
+            "real-time"
+        ],
         "description": "Specialized in real-time generation for game developers and artists. Offers fine-tuned community models and texture generation tools.",
         "stats": "1024x1024 resolution",
         "link": "https://app.leonardo.ai/image-generation",
@@ -281,7 +359,11 @@
         "license": "proprietary",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["typography", "logos", "legible-text"],
+        "useCase": [
+            "typography",
+            "logos",
+            "legible-text"
+        ],
         "description": "Specializes in generating images with accurate, stylized text. Popular for branding and poster design with a simple chat UI.",
         "stats": "1024x1024 resolution",
         "link": "https://ideogram.ai/t/explore",
@@ -293,7 +375,9 @@
         "license": "proprietary",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["text-to-image"],
+        "useCase": [
+            "text-to-image"
+        ],
         "description": "Free-to-use image generator with Stable Diffusion and custom models. Features inpainting, upscaling, and a user-friendly chat-style interface.",
         "stats": "1024x1024 resolution",
         "link": "https://playgroundai.com/",
@@ -305,19 +389,25 @@
         "license": "open-source",
         "architecture": "transformer",
         "performance": "balanced",
-        "useCase": ["chat", "instruction"],
+        "useCase": [
+            "chat",
+            "instruction"
+        ],
         "description": "Nous Research’s latest chat model with a focus on conversational depth and humor. Fine-tuned on diverse, high-quality datasets.",
         "stats": "34B parameters",
         "link": "https://huggingface.co/NousResearch/Nous-Capybara-34B",
         "provider": "Nous Research"
-    }
+    },
     {
         "name": "Sora",
         "category": "video",
         "license": "proprietary",
         "architecture": "diffusion",
         "performance": "high",
-        "useCase": ["text-to-video", "simulation"],
+        "useCase": [
+            "text-to-video",
+            "simulation"
+        ],
         "description": "OpenAI's high-fidelity video generation model (not yet public).",
         "stats": "60s clips",
         "link": "https://openai.com/sora",
@@ -329,7 +419,10 @@
         "license": "proprietary",
         "architecture": "diffusion",
         "performance": "balanced",
-        "useCase": ["music videos", "animations"],
+        "useCase": [
+            "music videos",
+            "animations"
+        ],
         "description": "Generates videos synced to music or text prompts.",
         "stats": "1080p output",
         "link": "https://kaiber.ai/superstudio/",
@@ -341,7 +434,10 @@
         "license": "proprietary",
         "architecture": "GAN",
         "performance": "high",
-        "useCase": ["talking photos", "presentations"],
+        "useCase": [
+            "talking photos",
+            "presentations"
+        ],
         "description": "Animates still images with realistic speech and expressions.",
         "stats": "Real-time API",
         "link": "https://studio.d-id.com",
@@ -353,10 +449,13 @@
         "license": "proprietary",
         "architecture": "GAN",
         "performance": "high",
-        "useCase": ["AI presenters", "corporate training"],
+        "useCase": [
+            "AI presenters",
+            "corporate training"
+        ],
         "description": "Generates videos with customizable AI avatars and voiceovers.",
         "stats": "140+ languages",
         "link": "https://app.synthesia.io/",
         "provider": "Synthesia"
-    },
+    }
 ]
