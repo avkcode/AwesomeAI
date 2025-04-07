@@ -300,6 +300,18 @@
         "provider": "Ideogram AI"
     },
     {
+        "name": "Playground AI",
+        "category": "image",
+        "license": "proprietary",
+        "architecture": "diffusion",
+        "performance": "balanced",
+        "useCase": ["text-to-image"],
+        "description": "Free-to-use image generator with Stable Diffusion and custom models. Features inpainting, upscaling, and a user-friendly chat-style interface.",
+        "stats": "1024x1024 resolution",
+        "link": "https://playgroundai.com/",
+        "provider": "Playground AI"
+    },
+    {
         "name": "Nous-Capybara",
         "category": "text",
         "license": "open-source",
