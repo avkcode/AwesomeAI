@@ -272,7 +272,7 @@
         "useCase": ["chat", "multilingual"],
         "description": "Alibaba’s advanced multilingual model with strong performance in Chinese and English. Features optimized tokenization for cross-lingual tasks.",
         "stats": "72B parameters",
-        "link": "https://huggingface.co/Qwen/Qwen2-72B",
+        "link": "https://chat.qwen.ai",
         "provider": "Alibaba"
     },
     {
