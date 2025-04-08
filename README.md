@@ -13,6 +13,19 @@
   </tr>
 </table>
 
+## Quick Start
+
+### Standalone Mode
+```bash
+./awesomeai  # Runs with default configuration
+```
+or just open index.html
+
+### Building from source
+```bash
+go build -o awesomeai  # Requires Go 1.20+
+```
+
 ## Configuration
 
 ### `MODEL_DATA_URL` Environment Variable
