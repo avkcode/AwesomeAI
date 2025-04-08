@@ -363,10 +363,11 @@
             useCase: ['chat', 'code', 'generation', 'analysis', 'translation']
         };
 
+        // Default URL if not provided by the server
+        window.MODEL_DATA_URL = window.MODEL_DATA_URL || 'https://raw.githubusercontent.com/avkcode/awesomeai/refs/heads/main/models.json';
+
         async function loadModelData() {
-            const defaultUrl = 'https://raw.githubusercontent.com/avkcode/awesomeai/refs/heads/main/models.json';
-            const modelDataUrl = process.env.MODELS_JSON_URL || defaultUrl;
-            
+            const modelDataUrl = window.MODEL_DATA_URL
             try {
                 const response = await fetch(modelDataUrl);
                 if (!response.ok) {

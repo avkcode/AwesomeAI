@@ -216,21 +216,6 @@
         "provider": "Stability AI"
     },
     {
-        "name": "Phi-3",
-        "category": "text",
-        "license": "open-source",
-        "architecture": "transformer",
-        "performance": "balanced",
-        "useCase": [
-            "chat",
-            "reasoning"
-        ],
-        "description": "Microsoft’s next-gen small-scale model with exceptional reasoning for its size. Designed for edge computing and low-latency applications.",
-        "stats": "3.8B parameters",
-        "link": "https://huggingface.co/microsoft/phi-3",
-        "provider": "Microsoft"
-    },
-    {
         "name": "Qwen 2",
         "category": "text",
         "license": "open-source",
