@@ -1,4 +1,4 @@
-# Awesomeai
+# AwesomeAI
 
 <table>
   <tr>
