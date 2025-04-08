@@ -296,6 +296,7 @@
                 <stop offset="70%" stop-color="#c59b3a"/>
                 <stop offset="100%" stop-color="#a67c00"/>
             </linearGradient>
+
         </defs>
     </svg>
     <h1>AI Periodic Table</h1>
@@ -348,7 +349,7 @@
             <span>Diffusion Architecture</span>
         </div>
     </div>
-    
+
     <script>
         const categoryColors = {
             "text": "#FF9999",
@@ -363,8 +364,11 @@
         };
 
         async function loadModelData() {
+            const defaultUrl = 'https://raw.githubusercontent.com/avkcode/awesomeai/refs/heads/main/models.json';
+            const modelDataUrl = process.env.MODELS_JSON_URL || defaultUrl;
+            
             try {
-                const response = await fetch('https://raw.githubusercontent.com/avkcode/awesomeai/refs/heads/main/models.json');
+                const response = await fetch(modelDataUrl);
                 if (!response.ok) {
                     throw new Error('Failed to load model data');
                 }
@@ -374,7 +378,7 @@
                 const gallery = document.getElementById('modelGallery');
                 gallery.innerHTML = `
                     <div style="grid-column: 1 / -1; text-align: center; padding: 20px; color: #ff9999;">
-                        Error loading model data. Please try again later.
+                        Error loading model data from ${modelDataUrl}. Please try again later.
                     </div>
                 `;
                 return [];
