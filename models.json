@@ -382,50 +382,5 @@
         "stats": "1024x1024 resolution",
         "link": "https://playgroundai.com/",
         "provider": "Playground AI"
-    },
-    {
-        "name": "Kaiber",
-        "category": "video",
-        "license": "proprietary",
-        "architecture": "diffusion",
-        "performance": "balanced",
-        "useCase": [
-            "music videos",
-            "animations"
-        ],
-        "description": "Generates videos synced to music or text prompts.",
-        "stats": "1080p output",
-        "link": "https://kaiber.ai/superstudio/",
-        "provider": "Kaiber"
-    },
-    {
-        "name": "D-ID",
-        "category": "video",
-        "license": "proprietary",
-        "architecture": "GAN",
-        "performance": "high",
-        "useCase": [
-            "talking photos",
-            "presentations"
-        ],
-        "description": "Animates still images with realistic speech and expressions.",
-        "stats": "Real-time API",
-        "link": "https://studio.d-id.com/",
-        "provider": "D-ID"
-    },
-    {
-        "name": "Synthesia",
-        "category": "video",
-        "license": "proprietary",
-        "architecture": "GAN",
-        "performance": "high",
-        "useCase": [
-            "AI presenters",
-            "corporate training"
-        ],
-        "description": "Generates videos with customizable AI avatars and voiceovers.",
-        "stats": "140+ languages",
-        "link": "https://app.synthesia.io/",
-        "provider": "Synthesia"
     }
 ]
