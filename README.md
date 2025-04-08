@@ -13,8 +13,6 @@
   </tr>
 </table>
 
-<div style="height: 3px; background: linear-gradient(90deg, #fff8d8, #f7e394, #e6c35a, #c59b3a, #a67c00); margin: 20px 0;"></div>
-
 ## Configuration
 
 ### `MODEL_DATA_URL` Environment Variable
