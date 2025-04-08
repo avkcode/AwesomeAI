@@ -1,5 +1,9 @@
 # Awesomeai
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/avkcode/awesomeai/refs/heads/main/favicon.svg" alt="AwesomeAI Logo" width="400">
+</div>
+
 A visual periodic table-style interface for exploring AI models. Organizes text, image, and multimodal models by category, architecture, and use case with interactive filtering.
 
 ## Configuration
