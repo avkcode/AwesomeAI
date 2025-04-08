@@ -9,8 +9,6 @@
   </div>
 </div>
 
-A visual periodic table-style interface for exploring AI models. Organizes text, image, and multimodal models by category, architecture, and use case with interactive filtering.
-
 ## Configuration
 
 ### `MODEL_DATA_URL` Environment Variable
