@@ -32,37 +32,6 @@
         "provider": "OpenAI"
     },
     {
-        "name": "Claude 3 Opus",
-        "category": "text",
-        "license": "proprietary",
-        "architecture": "transformer",
-        "performance": "high",
-        "useCase": [
-            "complex tasks",
-            "analysis"
-        ],
-        "description": "Most capable Claude 3 model for highly complex tasks, excelling in ethical reasoning, safety-first design, and interpreting ambiguous instructions with human-like nuance.",
-        "stats": "200K context",
-        "link": "https://claude.ai/",
-        "provider": "Anthropic"
-    },
-    {
-        "name": "Gemini 1.5",
-        "category": "multimodal",
-        "license": "proprietary",
-        "architecture": "transformer",
-        "performance": "high",
-        "useCase": [
-            "chat",
-            "vision",
-            "code"
-        ],
-        "description": "Google's most advanced multimodal model that can process text, images, audio, and video. Features exceptional cross-modal reasoning and integration with Google’s ecosystem for real-time data access.",
-        "stats": "1M tokens",
-        "link": "https://gemini.google.com/",
-        "provider": "Google"
-    },
-    {
         "name": "Llama 3",
         "category": "text",
         "license": "open-source",
@@ -262,21 +231,6 @@
         "provider": "Microsoft"
     },
     {
-        "name": "CodeLlama 2",
-        "category": "code",
-        "license": "open-source",
-        "architecture": "transformer",
-        "performance": "high",
-        "useCase": [
-            "code",
-            "python"
-        ],
-        "description": "Updated CodeLlama with improved multi-language support and debugging capabilities. Excels in generating production-ready code snippets.",
-        "stats": "7B-70B parameters",
-        "link": "https://huggingface.co/codellama",
-        "provider": "Meta"
-    },
-    {
         "name": "Qwen 2",
         "category": "text",
         "license": "open-source",
@@ -307,7 +261,7 @@
         "provider": "Mistral AI"
     },
     {
-        "name": "Gemini Ultra",
+        "name": "Gemini",
         "category": "multimodal",
         "license": "proprietary",
         "architecture": "transformer",
