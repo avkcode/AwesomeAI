@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornate Periodic Table</title>
+    <style>
+        body {
+            background-color: #1a0c1f;
+            font-family: Georgia, serif;
+            color: #e7ddc1;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: url(#gold);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(166, 124, 0, 0.5);
+        }
+        
+        .periodic-table {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            gap: 10px;
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+        
+        .element {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 120%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .element:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            z-index: 10;
+        }
+        
+        .element-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .element-number {
+            font-size: 0.9em;
+            color: #f7e394;
+            margin-top: 5px;
+        }
+        
+        .element-symbol {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .element-name {
+            font-size: 0.8em;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .element-mass {
+            font-size: 0.7em;
+            color: #cbb994;
+        }
+        
+        .empty {
+            visibility: hidden;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px auto;
+            max-width: 1000px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        @media (max-width: 1200px) {
+            .periodic-table {
+                grid-template-columns: repeat(9, 1fr);
+            }
+        }
+        
+        @media (max-width: 800px) {
+            .periodic-table {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .periodic-table {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <!-- Gold gradient -->
+            <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fff8d8"/>
+                <stop offset="30%" stop-color="#f7e394"/>
+                <stop offset="50%" stop-color="#e6c35a"/>
+                <stop offset="70%" stop-color="#c59b3a"/>
+                <stop offset="100%" stop-color="#a67c00"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <h1>Periodic Table of Elements</h1>
+    
+    <div class="periodic-table" id="periodicTable"></div>
+    
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FF9999;"></div>
+            <span>Alkali Metals</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FFDEAD;"></div>
+            <span>Alkaline Earth</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FFB6C1;"></div>
+            <span>Transition Metals</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #87CEEB;"></div>
+            <span>Post-Transition</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #98FB98;"></div>
+            <span>Metalloids</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FFA07A;"></div>
+            <span>Nonmetals</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #DDA0DD;"></div>
+            <span>Halogens</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #AFEEEE;"></div>
+            <span>Noble Gases</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FFD700;"></div>
+            <span>Lanthanides</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FFA500;"></div>
+            <span>Actinides</span>
+        </div>
+    </div>
+
+    <script>
+        // Periodic table data with positions and categories
+        const elements = [
+            { number: 1, symbol: "H", name: "Hydrogen", mass: 1.008, x: 1, y: 1, category: "nonmetal" },
+            { number: 2, symbol: "He", name: "Helium", mass: 4.0026, x: 18, y: 1, category: "noble-gas" },
+            { number: 3, symbol: "Li", name: "Lithium", mass: 6.94, x: 1, y: 2, category: "alkali-metal" },
+            { number: 4, symbol: "Be", name: "Beryllium", mass: 9.0122, x: 2, y: 2, category: "alkaline-earth" },
+            { number: 5, symbol: "B", name: "Boron", mass: 10.81, x: 13, y: 2, category: "metalloid" },
+            { number: 6, symbol: "C", name: "Carbon", mass: 12.011, x: 14, y: 2, category: "nonmetal" },
+            { number: 7, symbol: "N", name: "Nitrogen", mass: 14.007, x: 15, y: 2, category: "nonmetal" },
+            { number: 8, symbol: "O", name: "Oxygen", mass: 15.999, x: 16, y: 2, category: "nonmetal" },
+            { number: 9, symbol: "F", name: "Fluorine", mass: 18.998, x: 17, y: 2, category: "halogen" },
+            { number: 10, symbol: "Ne", name: "Neon", mass: 20.180, x: 18, y: 2, category: "noble-gas" },
+            { number: 11, symbol: "Na", name: "Sodium", mass: 22.990, x: 1, y: 3, category: "alkali-metal" },
+            { number: 12, symbol: "Mg", name: "Magnesium", mass: 24.305, x: 2, y: 3, category: "alkaline-earth" },
+            { number: 13, symbol: "Al", name: "Aluminum", mass: 26.982, x: 13, y: 3, category: "post-transition" },
+            { number: 14, symbol: "Si", name: "Silicon", mass: 28.085, x: 14, y: 3, category: "metalloid" },
+            { number: 15, symbol: "P", name: "Phosphorus", mass: 30.974, x: 15, y: 3, category: "nonmetal" },
+            { number: 16, symbol: "S", name: "Sulfur", mass: 32.06, x: 16, y: 3, category: "nonmetal" },
+            { number: 17, symbol: "Cl", name: "Chlorine", mass: 35.45, x: 17, y: 3, category: "halogen" },
+            { number: 18, symbol: "Ar", name: "Argon", mass: 39.948, x: 18, y: 3, category: "noble-gas" },
+            { number: 19, symbol: "K", name: "Potassium", mass: 39.098, x: 1, y: 4, category: "alkali-metal" },
+            { number: 20, symbol: "Ca", name: "Calcium", mass: 40.078, x: 2, y: 4, category: "alkaline-earth" },
+            { number: 21, symbol: "Sc", name: "Scandium", mass: 44.956, x: 3, y: 4, category: "transition-metal" },
+            { number: 22, symbol: "Ti", name: "Titanium", mass: 47.867, x: 4, y: 4, category: "transition-metal" },
+            { number: 23, symbol: "V", name: "Vanadium", mass: 50.942, x: 5, y: 4, category: "transition-metal" },
+            { number: 24, symbol: "Cr", name: "Chromium", mass: 51.996, x: 6, y: 4, category: "transition-metal" },
+            { number: 25, symbol: "Mn", name: "Manganese", mass: 54.938, x: 7, y: 4, category: "transition-metal" },
+            { number: 26, symbol: "Fe", name: "Iron", mass: 55.845, x: 8, y: 4, category: "transition-metal" },
+            { number: 27, symbol: "Co", name: "Cobalt", mass: 58.933, x: 9, y: 4, category: "transition-metal" },
+            { number: 28, symbol: "Ni", name: "Nickel", mass: 58.693, x: 10, y: 4, category: "transition-metal" },
+            { number: 29, symbol: "Cu", name: "Copper", mass: 63.546, x: 11, y: 4, category: "transition-metal" },
+            { number: 30, symbol: "Zn", name: "Zinc", mass: 65.38, x: 12, y: 4, category: "transition-metal" },
+            { number: 31, symbol: "Ga", name: "Gallium", mass: 69.723, x: 13, y: 4, category: "post-transition" },
+            { number: 32, symbol: "Ge", name: "Germanium", mass: 72.630, x: 14, y: 4, category: "metalloid" },
+            { number: 33, symbol: "As", name: "Arsenic", mass: 74.922, x: 15, y: 4, category: "metalloid" },
+            { number: 34, symbol: "Se", name: "Selenium", mass: 78.971, x: 16, y: 4, category: "nonmetal" },
+            { number: 35, symbol: "Br", name: "Bromine", mass: 79.904, x: 17, y: 4, category: "halogen" },
+            { number: 36, symbol: "Kr", name: "Krypton", mass: 83.798, x: 18, y: 4, category: "noble-gas" },
+            { number: 37, symbol: "Rb", name: "Rubidium", mass: 85.468, x: 1, y: 5, category: "alkali-metal" },
+            { number: 38, symbol: "Sr", name: "Strontium", mass: 87.62, x: 2, y: 5, category: "alkaline-earth" },
+            { number: 39, symbol: "Y", name: "Yttrium", mass: 88.906, x: 3, y: 5, category: "transition-metal" },
+            { number: 40, symbol: "Zr", name: "Zirconium", mass: 91.224, x: 4, y: 5, category: "transition-metal" },
+            { number: 41, symbol: "Nb", name: "Niobium", mass: 92.906, x: 5, y: 5, category: "transition-metal" },
+            { number: 42, symbol: "Mo", name: "Molybdenum", mass: 95.95, x: 6, y: 5, category: "transition-metal" },
+            { number: 43, symbol: "Tc", name: "Technetium", mass: 98, x: 7, y: 5, category: "transition-metal" },
+            { number: 44, symbol: "Ru", name: "Ruthenium", mass: 101.07, x: 8, y: 5, category: "transition-metal" },
+            { number: 45, symbol: "Rh", name: "Rhodium", mass: 102.91, x: 9, y: 5, category: "transition-metal" },
+            { number: 46, symbol: "Pd", name: "Palladium", mass: 106.42, x: 10, y: 5, category: "transition-metal" },
+            { number: 47, symbol: "Ag", name: "Silver", mass: 107.87, x: 11, y: 5, category: "transition-metal" },
+            { number: 48, symbol: "Cd", name: "Cadmium", mass: 112.41, x: 12, y: 5, category: "transition-metal" },
+            { number: 49, symbol: "In", name: "Indium", mass: 114.82, x: 13, y: 5, category: "post-transition" },
+            { number: 50, symbol: "Sn", name: "Tin", mass: 118.71, x: 14, y: 5, category: "post-transition" },
+            { number: 51, symbol: "Sb", name: "Antimony", mass: 121.76, x: 15, y: 5, category: "metalloid" },
+            { number: 52, symbol: "Te", name: "Tellurium", mass: 127.60, x: 16, y: 5, category: "metalloid" },
+            { number: 53, symbol: "I", name: "Iodine", mass: 126.90, x: 17, y: 5, category: "halogen" },
+            { number: 54, symbol: "Xe", name: "Xenon", mass: 131.29, x: 18, y: 5, category: "noble-gas" },
+            { number: 55, symbol: "Cs", name: "Cesium", mass: 132.91, x: 1, y: 6, category: "alkali-metal" },
+            { number: 56, symbol: "Ba", name: "Barium", mass: 137.33, x: 2, y: 6, category: "alkaline-earth" },
+            // Lanthanides
+            { number: 57, symbol: "La", name: "Lanthanum", mass: 138.91, x: 3, y: 8, category: "lanthanide" },
+            { number: 58, symbol: "Ce", name: "Cerium", mass: 140.12, x: 4, y: 8, category: "lanthanide" },
+            { number: 59, symbol: "Pr", name: "Praseodymium", mass: 140.91, x: 5, y: 8, category: "lanthanide" },
+            { number: 60, symbol: "Nd", name: "Neodymium", mass: 144.24, x: 6, y: 8, category: "lanthanide" },
+            { number: 61, symbol: "Pm", name: "Promethium", mass: 145, x: 7, y: 8, category: "lanthanide" },
+            { number: 62, symbol: "Sm", name: "Samarium", mass: 150.36, x: 8, y: 8, category: "lanthanide" },
+            { number: 63, symbol: "Eu", name: "Europium", mass: 151.96, x: 9, y: 8, category: "lanthanide" },
+            { number: 64, symbol: "Gd", name: "Gadolinium", mass: 157.25, x: 10, y: 8, category: "lanthanide" },
+            { number: 65, symbol: "Tb", name: "Terbium", mass: 158.93, x: 11, y: 8, category: "lanthanide" },
+            { number: 66, symbol: "Dy", name: "Dysprosium", mass: 162.50, x: 12, y: 8, category: "lanthanide" },
+            { number: 67, symbol: "Ho", name: "Holmium", mass: 164.93, x: 13, y: 8, category: "lanthanide" },
+            { number: 68, symbol: "Er", name: "Erbium", mass: 167.26, x: 14, y: 8, category: "lanthanide" },
+            { number: 69, symbol: "Tm", name: "Thulium", mass: 168.93, x: 15, y: 8, category: "lanthanide" },
+            { number: 70, symbol: "Yb", name: "Ytterbium", mass: 173.05, x: 16, y: 8, category: "lanthanide" },
+            { number: 71, symbol: "Lu", name: "Lutetium", mass: 174.97, x: 17, y: 8, category: "lanthanide" },
+            // Main table continued
+            { number: 72, symbol: "Hf", name: "Hafnium", mass: 178.49, x: 4, y: 6, category: "transition-metal" },
+            { number: 73, symbol: "Ta", name: "Tantalum", mass: 180.95, x: 5, y: 6, category: "transition-metal" },
+            { number: 74, symbol: "W", name: "Tungsten", mass: 183.84, x: 6, y: 6, category: "transition-metal" },
+            { number: 75, symbol: "Re", name: "Rhenium", mass: 186.21, x: 7, y: 6, category: "transition-metal" },
+            { number: 76, symbol: "Os", name: "Osmium", mass: 190.23, x: 8, y: 6, category: "transition-metal" },
+            { number: 77, symbol: "Ir", name: "Iridium", mass: 192.22, x: 9, y: 6, category: "transition-metal" },
+            { number: 78, symbol: "Pt", name: "Platinum", mass: 195.08, x: 10, y: 6, category: "transition-metal" },
+            { number: 79, symbol: "Au", name: "Gold", mass: 196.97, x: 11, y: 6, category: "transition-metal" },
+            { number: 80, symbol: "Hg", name: "Mercury", mass: 200.59, x: 12, y: 6, category: "transition-metal" },
+            { number: 81, symbol: "Tl", name: "Thallium", mass: 204.38, x: 13, y: 6, category: "post-transition" },
+            { number: 82, symbol: "Pb", name: "Lead", mass: 207.2, x: 14, y: 6, category: "post-transition" },
+            { number: 83, symbol: "Bi", name: "Bismuth", mass: 208.98, x: 15, y: 6, category: "post-transition" },
+            { number: 84, symbol: "Po", name: "Polonium", mass: 209, x: 16, y: 6, category: "metalloid" },
+            { number: 85, symbol: "At", name: "Astatine", mass: 210, x: 17, y: 6, category: "halogen" },
+            { number: 86, symbol: "Rn", name: "Radon", mass: 222, x: 18, y: 6, category: "noble-gas" },
+            { number: 87, symbol: "Fr", name: "Francium", mass: 223, x: 1, y: 7, category: "alkali-metal" },
+            { number: 88, symbol: "Ra", name: "Radium", mass: 226, x: 2, y: 7, category: "alkaline-earth" },
+            // Actinides
+            { number: 89, symbol: "Ac", name: "Actinium", mass: 227, x: 3, y: 9, category: "actinide" },
+            { number: 90, symbol: "Th", name: "Thorium", mass: 232.04, x: 4, y: 9, category: "actinide" },
+            { number: 91, symbol: "Pa", name: "Protactinium", mass: 231.04, x: 5, y: 9, category: "actinide" },
+            { number: 92, symbol: "U", name: "Uranium", mass: 238.03, x: 6, y: 9, category: "actinide" },
+            { number: 93, symbol: "Np", name: "Neptunium", mass: 237, x: 7, y: 9, category: "actinide" },
+            { number: 94, symbol: "Pu", name: "Plutonium", mass: 244, x: 8, y: 9, category: "actinide" },
+            { number: 95, symbol: "Am", name: "Americium", mass: 243, x: 9, y: 9, category: "actinide" },
+            { number: 96, symbol: "Cm", name: "Curium", mass: 247, x: 10, y: 9, category: "actinide" },
+            { number: 97, symbol: "Bk", name: "Berkelium", mass: 247, x: 11, y: 9, category: "actinide" },
+            { number: 98, symbol: "Cf", name: "Californium", mass: 251, x: 12, y: 9, category: "actinide" },
+            { number: 99, symbol: "Es", name: "Einsteinium", mass: 252, x: 13, y: 9, category: "actinide" },
+            { number: 100, symbol: "Fm", name: "Fermium", mass: 257, x: 14, y: 9, category: "actinide" },
+            { number: 101, symbol: "Md", name: "Mendelevium", mass: 258, x: 15, y: 9, category: "actinide" },
+            { number: 102, symbol: "No", name: "Nobelium", mass: 259, x: 16, y: 9, category: "actinide" },
+            { number: 103, symbol: "Lr", name: "Lawrencium", mass: 262, x: 17, y: 9, category: "actinide" },
+            // Main table continued
+            { number: 104, symbol: "Rf", name: "Rutherfordium", mass: 267, x: 4, y: 7, category: "transition-metal" },
+            { number: 105, symbol: "Db", name: "Dubnium", mass: 268, x: 5, y: 7, category: "transition-metal" },
+            { number: 106, symbol: "Sg", name: "Seaborgium", mass: 269, x: 6, y: 7, category: "transition-metal" },
+            { number: 107, symbol: "Bh", name: "Bohrium", mass: 270, x: 7, y: 7, category: "transition-metal" },
+            { number: 108, symbol: "Hs", name: "Hassium", mass: 269, x: 8, y: 7, category: "transition-metal" },
+            { number: 109, symbol: "Mt", name: "Meitnerium", mass: 278, x: 9, y: 7, category: "transition-metal" },
+            { number: 110, symbol: "Ds", name: "Darmstadtium", mass: 281, x: 10, y: 7, category: "transition-metal" },
+            { number: 111, symbol: "Rg", name: "Roentgenium", mass: 282, x: 11, y: 7, category: "transition-metal" },
+            { number: 112, symbol: "Cn", name: "Copernicium", mass: 285, x: 12, y: 7, category: "transition-metal" },
+            { number: 113, symbol: "Nh", name: "Nihonium", mass: 286, x: 13, y: 7, category: "post-transition" },
+            { number: 114, symbol: "Fl", name: "Flerovium", mass: 289, x: 14, y: 7, category: "post-transition" },
+            { number: 115, symbol: "Mc", name: "Moscovium", mass: 290, x: 15, y: 7, category: "post-transition" },
+            { number: 116, symbol: "Lv", name: "Livermorium", mass: 293, x: 16, y: 7, category: "post-transition" },
+            { number: 117, symbol: "Ts", name: "Tennessine", mass: 294, x: 17, y: 7, category: "halogen" },
+            { number: 118, symbol: "Og", name: "Oganesson", mass: 294, x: 18, y: 7, category: "noble-gas" }
+        ];
+
+        // Category colors
+        const categoryColors = {
+            "alkali-metal": "#FF9999",
+            "alkaline-earth": "#FFDEAD",
+            "transition-metal": "#FFB6C1",
+            "post-transition": "#87CEEB",
+            "metalloid": "#98FB98",
+            "nonmetal": "#FFA07A",
+            "halogen": "#DDA0DD",
+            "noble-gas": "#AFEEEE",
+            "lanthanide": "#FFD700",
+            "actinide": "#FFA500"
+        };
+
+        // Create the periodic table grid
+        function createPeriodicTable() {
+            const table = document.getElementById('periodicTable');
+            
+            // Create 9 rows (including lanthanides/actinides rows)
+            for (let y = 1; y <= 9; y++) {
+                // Create 18 columns
+                for (let x = 1; x <= 18; x++) {
+                    const element = elements.find(el => el.x === x && el.y === y);
+                    
+                    const cell = document.createElement('div');
+                    cell.className = 'element';
+                    
+                    if (element) {
+                        // Set background color based on category
+                        cell.style.background = `radial-gradient(circle at 50% 0%, ${categoryColors[element.category]}, #2a1233)`;
+                        cell.style.border = `2px solid ${categoryColors[element.category]}`;
+                        
+                        const content = document.createElement('div');
+                        content.className = 'element-content';
+                        content.innerHTML = `
+                            <div class="element-number">${element.number}</div>
+                            <div class="element-symbol" style="color: url(#gold);">${element.symbol}</div>
+                            <div class="element-name">${element.name}</div>
+                            <div class="element-mass">${element.mass}</div>
+                        `;
+                        cell.appendChild(content);
+                    } else {
+                        // Empty cell
+                        cell.className = 'element empty';
+                    }
+                    
+                    // Special positioning for lanthanides/actinides
+                    if (y === 8 || y === 9) {
+                        cell.style.gridRow = y === 8 ? '8' : '9';
+                        cell.style.gridColumn = (x + 2) + ' / span 1';
+                    }
+                    
+                    table.appendChild(cell);
+                }
+            }
+        }
+
+        // Initialize the table when the page loads
+        window.onload = createPeriodicTable;
+    </script>
+</body>
+</html>

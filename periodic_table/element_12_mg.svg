@@ -1,0 +1,78 @@
+<svg width="240" height="280" viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gold gradient -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8d8"/>
+      <stop offset="30%" stop-color="#f7e394"/>
+      <stop offset="50%" stop-color="#e6c35a"/>
+      <stop offset="70%" stop-color="#c59b3a"/>
+      <stop offset="100%" stop-color="#a67c00"/>
+    </linearGradient>
+
+    <!-- Background gradient -->
+    <radialGradient id="velvet" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#3b1f47"/>
+      <stop offset="50%" stop-color="#2a1233"/>
+      <stop offset="100%" stop-color="#1a0c1f"/>
+    </radialGradient>
+
+    <!-- Bevel Shine -->
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Drop shadow -->
+    <filter id="deepShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceAlpha" dx="6" dy="8" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+
+    <!-- Texture overlay -->
+    <pattern id="ornament" patternUnits="userSpaceOnUse" width="20" height="20">
+      <circle cx="10" cy="10" r="2" fill="#e7ddc1" />
+    </pattern>
+  </defs>
+
+  <!-- Ornate background card -->
+  <rect width="240" height="280" rx="40" ry="40"
+        fill="url(#velvet)" stroke="url(#gold)" stroke-width="6" />
+
+  <!-- Subtle inner shine -->
+  <rect x="0" y="0" width="240" height="280" rx="40" ry="40" fill="url(#shine)" />
+
+  <!-- Top label -->
+  <text x="120" y="50" font-family="Georgia, serif" font-size="22" fill="url(#gold)" text-anchor="middle">
+    Element No. 12
+  </text>
+
+  <!-- 3D Layered symbol -->
+  <g transform="translate(120,130)">
+    <!-- Shadow layers -->
+    <text x="0" y="0" font-family="Georgia, serif" font-size="80" font-weight="bold"
+          text-anchor="middle" fill="#1a0c1f" opacity="0.25" transform="translate(6,8)">Mg</text>
+    <text x="0" y="0" font-family="Georgia, serif" font-size="80" font-weight="bold"
+          text-anchor="middle" fill="#3b1f47" opacity="0.5" transform="translate(3,4)">Mg</text>
+    <!-- Main gold face -->
+    <text x="0" y="0" font-family="Georgia, serif" font-size="80" font-weight="bold"
+          text-anchor="middle" fill="url(#gold)" filter="url(#deepShadow)">Mg</text>
+  </g>
+
+  <!-- Decorative swoosh -->
+  <path d="M50 160 Q120 185 190 160" stroke="url(#gold)" stroke-width="2" fill="none"/>
+
+  <!-- Element name -->
+  <text x="120" y="200" font-family="Georgia, serif" font-size="20" fill="#e7ddc1" text-anchor="middle">
+    Magnesium
+  </text>
+
+  <!-- Atomic mass -->
+  <text x="120" y="225" font-family="Georgia, serif" font-size="18" fill="#cbb994" text-anchor="middle">
+    24.305
+  </text>
+
+  <!-- Texture overlay -->
+  <rect width="240" height="280" fill="url(#ornament)" opacity="0.1" />
+</svg>
